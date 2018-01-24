@@ -1,0 +1,17 @@
+.list{
+	margin: 1rem 0 1rem 0;
+	margin-left: calc(20%/2);
+	border: 1px solid #e0e0e0;
+	border-radius: 2px;
+	overflow: hidden;
+	list-style-type: none;
+	width: 80%;
+}
+
+.list li{
+	background-color: #FFF;
+	line-height: 1.5rem;
+	padding: 10px 20px;
+	margin: 0;
+	border-bottom: 1px solid #e0e0e0;
+}
