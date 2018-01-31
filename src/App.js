@@ -1,41 +1,18 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import TopBar from './components/TopBar'
-import { ImageList as List } from './components/List'
 import styles from './App.css'
+import Home from './routes/Home'
 
-const items = [
-	{
-		name: 'Slovenčina',
-		style: {
-			backgroundImage: 'url(https://pluralsight.imgix.net/paths/path-icons/nodejs-601628d09d.png)'
-		}
-	},
-	{
-		name: 'Matematika',
-		style: {
-			backgroundImage: 'url(https://pluralsight.imgix.net/paths/path-icons/nodejs-601628d09d.png)'
-		}
-	},
-	{
-		name: 'Nemčina',
-		style: {
-			backgroundImage: 'url(https://pluralsight.imgix.net/paths/path-icons/nodejs-601628d09d.png)'
-		}
-	},
-	{
-		name: 'Informatika',
-		style: {
-			backgroundImage: 'url(https://pluralsight.imgix.net/paths/path-icons/nodejs-601628d09d.png)'
-		}
-	},
-]
 
 function App(props){
 	return (
-		<div id="App">
-			<TopBar />
-			<List items={items} />
-		</div>
+		<Router>
+			<div id="App">
+				<TopBar />
+				<Route path="/" component={Home} />
+			</div>
+		</Router>
 	)
 }
 
