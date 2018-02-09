@@ -34,4 +34,14 @@ export const ImageList = props => (
 	</List>
 )
 
-export const VerticalList = (props) => <List { ...props} styles={ styles } />
+export const VerticalList = (props) => (
+	<List styles={styles}>
+		{React.Children.map(props.children, child => 
+			<li className={styles.padding}>
+				<ImageListLinked {...child.props}>
+					{child.props.children}
+				</ImageListLinked>
+			</li>
+		)}
+	</List>
+)

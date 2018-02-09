@@ -1,7 +1,9 @@
 # Danube project TODO list
 
+- Add Redux
 - Dynamic routing for vertical list
-- Data fetching from home
+- Data fetching from routes 
+    - Remake routes into smart components
     - Deal with picture sizes / not loaded list skeleton
     - List links functionality [-]
     - Animations?
