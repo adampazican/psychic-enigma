@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './List.css'
 import imageStyles from './ImageList.css'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 function List(props){
 	return(
@@ -11,7 +12,7 @@ function List(props){
 	)
 }
 
-function ImageListLinked(props){
+function ListLinked(props){
 	const children = <p>{props.children}</p>
 	return (
 		props.linkTo ? (
@@ -22,26 +23,41 @@ function ImageListLinked(props){
 	)
 }
 
+ListLinked.propTypes = {
+	children: PropTypes.element.isRequired
+}
+
 export const ImageList = props => ( 
 	<List styles={imageStyles}>
 		{React.Children.map(props.children, child => 
 			<li style={{ backgroundImage: 'url(' + child.props.image + ')' }}>
-				<ImageListLinked {...child.props}>
+				<ListLinked {...child.props}>
 					{child.props.children}
-				</ImageListLinked>
+				</ListLinked>
 			</li>
 		)}
 	</List>
 )
 
-export const VerticalList = (props) => (
+ImageList.propTypes = {
+	children: PropTypes.element.isRequired,
+	linkTo: PropTypes.string,
+	image: PropTypes.string
+}
+
+export const VerticalList = props => (
 	<List styles={styles}>
 		{React.Children.map(props.children, child => 
 			<li className={styles.padding}>
-				<ImageListLinked {...child.props}>
+				<ListLinked {...child.props}>
 					{child.props.children}
-				</ImageListLinked>
+				</ListLinked>
 			</li>
 		)}
 	</List>
 )
+
+VerticalList.propTypes = {
+	children: PropTypes.element.isRequired,
+	linkTo: PropTypes.string
+}

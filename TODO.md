@@ -1,6 +1,7 @@
 # Danube project TODO list
 
 - Add Redux
+- Add proptypes for components
 - Dynamic routing for vertical list
 - Data fetching from routes 
     - Remake routes into smart components [-]
