@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { VerticalList } from '../components/List'
 
-export default function LessonList(props){
-    return(
-        <VerticalList>
-            <li linkTo="/polynomy">Polynómy</li>
-            <li linkTo="/matice">Matice</li>
-            <li linkTo="/vektory">Vektory</li>
-        </VerticalList>
-    )
+class LessonList extends Component{
+    render(){
+        return (
+            <VerticalList>
+                <li linkTo="/polynomy">Polynómy</li>
+                <li linkTo="/matice">Matice</li>
+                <li linkTo="/vektory">Vektory</li>
+            </VerticalList>
+        )
+    }
 }
+export default LessonList
