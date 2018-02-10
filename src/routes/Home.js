@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { ImageList } from '../components/List'
 
 class Home extends Component{
 	render(){
+		console.log(this.props.subjects)
 		return (
 			<ImageList>
 				<li 
@@ -22,4 +24,8 @@ class Home extends Component{
 	}
 }
 
-export default Home
+function mapStateToProps(state) {
+	return { subjects: state.subjects}
+}
+
+export default connect(mapStateToProps)(Home)

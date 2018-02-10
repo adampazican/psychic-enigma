@@ -24,7 +24,6 @@ function ListLinked(props){
 }
 
 ListLinked.propTypes = {
-	children: PropTypes.element.isRequired
 }
 
 export const ImageList = props => ( 
@@ -40,7 +39,6 @@ export const ImageList = props => (
 )
 
 ImageList.propTypes = {
-	children: PropTypes.element.isRequired,
 	linkTo: PropTypes.string,
 	image: PropTypes.string
 }
