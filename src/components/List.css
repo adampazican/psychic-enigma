@@ -14,6 +14,15 @@
 	margin: 0;
 	border-bottom: 1px solid #e0e0e0;
 	line-height: 1.5rem;
+	transition: background-color 300ms ease-in-out;
+}
+
+.list li:hover{
+	background-color: #303f9f;
+}
+
+.list li:active{
+	background-color: #283593;
 }
 
 .list li a{

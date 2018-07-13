@@ -1,6 +1,11 @@
 # Danube project TODO list
 
 - Add Redux [-]
+- Registration form
+- Login dialog 
+    - design [-]
+    - api calls
+- Create, Update, Read, Delete Article ( Levels? )
 - Add proptypes for components [-]
 - Dynamic routing for vertical list
 - Data fetching from routes 

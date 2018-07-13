@@ -1,0 +1,60 @@
+.hidden{
+    visibility: hidden;
+}
+
+.loginForm{
+    position: absolute;
+    width: 200px;
+    height: 130px;
+    background-color: #FFF;
+    border: 5px solid #283593;
+    border-radius: 5%;
+    padding: 20px;
+    right: 20px;
+    margin-top: 5px;
+}
+
+.loginForm legend{
+    margin-bottom: 5px;
+}
+
+.loginForm input{
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.26);
+    outline: 0;
+    border-width: 2px;
+    padding: 8px;
+}
+.loginForm input:focus{
+    border-color: #283593;
+    transition: border-color 300ms ease;
+}
+.loginForm button{
+    width: 95%;
+    margin-top: 17px;
+    padding-bottom: 10px;
+    background-color: #283593;
+    cursor: pointer;
+    color: #FFF;
+    padding: 8px;
+    border: none;
+    letter-spacing: .5px;
+    transition: all 200ms ease-in;
+    border-radius: 2px;
+}
+.loginForm button:hover{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    background-color: #303f9f;
+}
+.loginForm button:active{
+    background-color: #283593;
+}
+.triangle{
+    position: absolute;
+	width: 0;
+    height: 0;
+    margin-top: -45px;
+    margin-left: 190px;
+	border-bottom: 20px solid #1E353C;
+	border-left: 20px solid transparent;
+}
