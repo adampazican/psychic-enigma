@@ -20,11 +20,17 @@
 
 .loginForm input{
     border: none;
-    border-bottom: 1px solid rgba(0,0,0,.26);
+    border-bottom: 1px solid #90a4ae;
     outline: 0;
     border-width: 2px;
     padding: 8px;
+    background-color: transparent;
+    color: #90a4ae;
 }
+.loginForm input::placeholder{
+    color: #90a4ae;
+}
+
 .loginForm input:focus{
     border-color: #283593;
     transition: border-color 300ms ease;
