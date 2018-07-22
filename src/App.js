@@ -12,9 +12,9 @@ function App({ user }){
 	return (
 		<Router>
 			<div id="App" className={styles.App}>
-				{console.log(user, '\n', Object.keys(user).length === 0)}
+				{console.log(user)}
 				<TopBar />
-				<LoginForm hidden={Object.keys(user).length !== 0} />
+				<LoginForm hidden={!user.menuOpen} />
 				<Switch>
 					<Route path="/register" component={Register} />
 					<Route path="/:subject" component={LessonList} />
