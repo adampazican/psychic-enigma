@@ -56,6 +56,6 @@ export const VerticalList = props => (
 )
 
 VerticalList.propTypes = {
-	children: PropTypes.element.isRequired,
+	children: PropTypes.array.isRequired,
 	linkTo: PropTypes.string
 }

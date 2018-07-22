@@ -2,7 +2,6 @@
 	composes: list from './List.css';
 	display: flex;
 	height: 500px;
-	margin-top: calc(50vh - 300px);
 }
 
 .list li{

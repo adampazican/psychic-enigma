@@ -3,3 +3,9 @@
 	width: 100%;
 	height: 50px;
 }
+
+.userIcon{
+	float: right;
+	margin-top: 5px;
+	margin-right: 15px;
+}

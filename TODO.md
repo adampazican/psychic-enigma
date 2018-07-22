@@ -5,6 +5,7 @@
 - Login dialog 
     - design [-]
     - api calls
+        - api response -> save token to store or smtgin
 - Create, Update, Read, Delete Article ( Levels? )
 - Add proptypes for components [-]
 - Dynamic routing for vertical list
