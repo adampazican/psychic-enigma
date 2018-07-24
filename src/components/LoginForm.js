@@ -57,7 +57,7 @@ class LoginForm extends Component{
 
         const { username, password } = this.state
         
-        const response = await fetch('/login', {
+        const response = await fetch('/api/user/login', {
             method: 'POST',
             body: JSON.stringify({
                 username,
