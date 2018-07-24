@@ -1,4 +1,4 @@
-import { FETCH_SUBJECTS } from '../actions/action-types'
+import { FETCH_SUBJECTS } from '../action-types'
 
 export const addSubjects = (subjects) => { return { type: FETCH_SUBJECTS, payload: subjects } } 
 

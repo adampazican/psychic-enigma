@@ -36,7 +36,7 @@
     transition: border-color 300ms ease;
 }
 .loginForm button{
-    width: 95%;
+    width: calc(47% - 2.5px);
     margin-top: 17px;
     padding-bottom: 10px;
     background-color: #283593;
@@ -55,6 +55,16 @@
 .loginForm button:active{
     background-color: #283593;
 }
+
+.loginForm button:last-of-type{
+    margin-left: 5px;
+}
+
+.loginForm button a{
+    color: #FFF;
+    text-decoration: none;
+}
+
 .triangle{
     position: absolute;
 	width: 0;

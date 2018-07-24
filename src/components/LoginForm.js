@@ -2,6 +2,7 @@ import React, { Component} from 'react'
 import style from './LoginForm.css'
 import { connect } from 'react-redux'
 import { authenticateUser } from '../reducers/user'
+import { Link } from 'react-router-dom'
 
 class LoginForm extends Component{
     constructor(props){
@@ -35,6 +36,7 @@ class LoginForm extends Component{
                         </div>
                         <div>
                             <button type="submit">Login</button>
+                            <button><Link to="/register">Register</Link></button>
                         </div>
                     </form>
                 </div>

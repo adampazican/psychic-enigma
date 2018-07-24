@@ -49,7 +49,7 @@ export default class RegisterForm extends Component{
 
         const { username, password } = this.state
         
-        const response = await fetch('/api/register', {
+        const response = await fetch('/api/users', {
             method: 'POST',
             body: JSON.stringify({
                 username,

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { ImageList } from '../components/List'
 import { addSubjects } from '../reducers/subjects'
+import { removeDiacritics } from '../utils/utils'
 
 class Home extends Component{
 	componentDidMount = async () => {
@@ -18,7 +19,7 @@ class Home extends Component{
 					<ImageList>
 						{this.props.subjects.map((subject, i) => 
 							<li 
-								linkTo={`/${subject.name}`} 
+								linkTo={`/${removeDiacritics(subject.name)}`} 
 								image={subject.image}
 								key={i}>{subject.name}</li>
 						)}

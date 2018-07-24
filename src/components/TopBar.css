@@ -2,14 +2,22 @@
 	background-color: #303f9f;
 	width: 100%;
 	height: 50px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .userIcon{
-	float: right;
 	margin-top: 5px;
 	margin-right: 15px;
 }
 
 #topBar a{
 	cursor: pointer;
+	text-decoration: none;
+	color: #FFF;
+}
+
+.name{
+	margin-top: 15px;
+	margin-left: 5px;
 }

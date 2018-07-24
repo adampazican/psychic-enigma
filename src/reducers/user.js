@@ -1,5 +1,5 @@
-import { AUTHENTICATE_USER } from '../actions/action-types'
-import { TOGGLE_MENU } from '../actions/action-types'
+import { AUTHENTICATE_USER } from '../action-types'
+import { TOGGLE_MENU } from '../action-types'
 
 export const authenticateUser = (user) => { return { type: AUTHENTICATE_USER, payload: user } }
 export const toggleMenu = () => { return { type: TOGGLE_MENU }}

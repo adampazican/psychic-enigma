@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { VerticalList } from '../components/List'
 
-class LessonList extends Component{
+class ArticleList extends Component{
     render(){
         return (
             <VerticalList>
@@ -12,4 +12,4 @@ class LessonList extends Component{
         )
     }
 }
-export default LessonList
+export default ArticleList

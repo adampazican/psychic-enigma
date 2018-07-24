@@ -6,7 +6,7 @@
 	overflow: hidden;
 	list-style-type: none;
 	width: 80%;
-	margin-top: calc(30vh - 300px);
+	margin-top: calc(20% - 300px);
 }
 
 .registerForm input, .registerForm legend, .registerForm button{

@@ -1,10 +1,10 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { connect } from 'react-redux'
 import TopBar from './components/TopBar'
 import styles from './App.css'
 import Home from './routes/Home'
-import LessonList from './routes/LessonList'
+import ArticleList from './routes/ArticleList'
 import LoginForm from './components/LoginForm'
 import Register from './routes/Register'
 
@@ -17,7 +17,7 @@ function App({ user }){
 				<LoginForm hidden={!user.menuOpen} />
 				<Switch>
 					<Route path="/register" component={Register} />
-					<Route path="/:subject" component={LessonList} />
+					<Route path="/:subject" component={ArticleList} />
 					<Route path="/" component={Home} />
 				</Switch>
 			</div>
