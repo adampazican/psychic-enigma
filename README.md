@@ -1,6 +1,6 @@
 # Psychic enigma
 
-Nodejs app for teachers to post materials online. Main purpose of this project is to experiment with nodejs and react.
+React app for teachers to post materials online. Main purpose of this project is to experiment with nodejs and react.
 
 ## Dependencies
 
