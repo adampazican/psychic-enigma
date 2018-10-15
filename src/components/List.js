@@ -23,8 +23,6 @@ function ListLinked(props){
 	)
 }
 
-ListLinked.propTypes = {
-}
 
 export const ImageList = props => ( 
 	<List styles={imageStyles}>
